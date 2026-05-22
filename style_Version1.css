@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.container {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    color: #00ff88;
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    text-shadow: 0 0 10px #00ff88;
+}
+
+.score-board {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+    background: rgba(0, 255, 136, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #00ff88;
+}
+
+.score {
+    flex: 1;
+}
+
+.score-label {
+    color: #00ff88;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.score-value {
+    color: #ffffff;
+    font-size: 3em;
+    font-weight: bold;
+    text-shadow: 0 0 10px #00ff88;
+}
+
+.game-board {
+    background: #0a0e27;
+    border: 3px solid #00ff88;
+    border-radius: 10px;
+    margin: 30px 0;
+    box-shadow: 0 0 20px rgba(0, 255, 136, 0.3);
+    overflow: hidden;
+    display: inline-block;
+}
+
+canvas {
+    background: linear-gradient(to right, rgba(0, 255, 136, 0.05), rgba(0, 255, 136, 0.05));
+    display: block;
+}
+
+.controls {
+    color: #ffffff;
+    margin: 20px 0;
+    background: rgba(0, 255, 136, 0.1);
+    padding: 15px;
+    border-radius: 10px;
+    border-left: 3px solid #00ff88;
+}
+
+.controls p {
+    margin: 8px 0;
+    font-size: 0.95em;
+}
+
+.controls strong {
+    color: #00ff88;
+}
+
+.reset-btn {
+    background: #00ff88;
+    color: #0a0e27;
+    border: none;
+    padding: 12px 30px;
+    font-size: 1.1em;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 20px;
+}
+
+.reset-btn:hover {
+    background: #00dd66;
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(0, 255, 136, 0.5);
+}
+
+.reset-btn:active {
+    transform: scale(0.95);
+}
+
+@media (max-width: 900px) {
+    .container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    canvas {
+        width: 100%;
+        height: auto;
+    }
+}
